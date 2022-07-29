@@ -9,7 +9,7 @@ def main():
     random_score = random.randrange(0, 101, 1)
     result = determine_score(score)
     random_result = determine_random_score(random_score)
-    print(f"The random score is {random_score} and the result is {result}")
+    print(f"The random score is {random_score} and the result is {random_result}")
     print(result)
 
 def determine_score(score):
