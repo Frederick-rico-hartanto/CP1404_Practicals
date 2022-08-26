@@ -8,7 +8,7 @@ def main():
     cost = 16035.40
 
     guitar = Guitar(name, year, cost)
-    other = Guitar("Another Guitar", 2015, 0)
+    other = Guitar("Another Guitar", 2013, 0)
 
     print("{} get_age() - Expected {}. Got {}".format(guitar.name, 98, guitar.get_age()))
 
