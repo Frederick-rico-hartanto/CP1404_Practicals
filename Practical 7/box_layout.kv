@@ -7,3 +7,13 @@ BoxLayout:
         text: 'two'
     Button:
         text: 'three'
+    Label:
+        text:'FredRico'
+        color: (1, 1, 0, 1)
+    Button:
+        text: 'Greet'
+        on_press: app.handle_greet()
+        id: output_label
+    TextInput:
+        id: input_name
+        text: ''
