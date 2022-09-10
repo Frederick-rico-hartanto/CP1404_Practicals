@@ -15,3 +15,4 @@ class SilverServiceTaxi(Taxi):
         return self.flag_fall + super().get_fare()
 
 
+
