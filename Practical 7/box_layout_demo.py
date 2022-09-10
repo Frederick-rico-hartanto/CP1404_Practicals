@@ -14,6 +14,6 @@ class BoxLayoutDemo(App):
 
     def clear_box(self):
         self.root.ids.input_name.text = ''
-        self.root.ids.output_label.text = "greet "
+        self.root.ids.output_label.text = "Enter your name "
 
 BoxLayoutDemo().run()
