@@ -27,5 +27,5 @@ def main():
     else:
         print("You have no guitars :(")
 
-if __name__ == '__main__':
-    main()
+
+main()

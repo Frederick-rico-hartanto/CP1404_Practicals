@@ -19,3 +19,4 @@ def main():
     print("{} is_vintage() - Expected {}. Got {}".format(other.name, False, other.is_vintage()))
 
 main()
+
