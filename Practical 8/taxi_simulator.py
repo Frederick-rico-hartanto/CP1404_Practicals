@@ -23,11 +23,6 @@ def main():
                 current_taxi = taxis[taxi_choice]
             except IndexError:
                 print("Invalid taxi choice")
-
-            print(f"Bill to date: ${total}")
-            print(MENU)
-            choice = input(">>>").upper()
-
         elif choice == "D":
             if current_taxi:
                 current_taxi.start_fare()
@@ -43,19 +38,16 @@ def main():
                     trip_fare = current_taxi.get_price()
                     print(f"Your {current_taxi.name} trip cost you ${trip_fare}")
                     total += trip_fare
-
-                print(f"Bill to date: ${total}")
-                print(MENU)
-                choice = input(">>>").upper()
             else:
                 print("You need to choose a taxi before you can drive")
-                print(f"Bill to date: ${total}")
-                print(MENU)
-                choice = input(">>>").upper()
+
+
         else:
             print("Invalid option")
-            print(MENU)
-            choice = input(">>>").upper()
+
+        print(f"Bill to date: ${total}")
+        print(MENU)
+        choice = input(">>>").upper()
 
     print(f"Total trip cost: ${total}")
     print("Taxis are now:")
